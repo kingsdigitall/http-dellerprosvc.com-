@@ -26,7 +26,7 @@ const page = () => {
         p1={contentData.metaDescription}
       />
       {/* Content 1 */}
-      <div className="my-10 grid  grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-24 ">
+      <div className="my-10 grid  grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-24  ">
         <div className="flex flex-col justify-center    ">
           <h2 className="text-first text-3xl font-bold">{contentData.h2}</h2>
           <div

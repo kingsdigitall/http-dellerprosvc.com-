@@ -20,8 +20,7 @@ const Hero = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: `${ContactInfo.name}`,
-    image:
-      `${ContactInfo.logo}` || "",
+    image: `${ContactInfo.logo}` || "",
     "@id": `${ContactInfo.baseUrl}`,
     url: `${ContactInfo.baseUrl}`,
     telephone: `${ContactInfo.No}`,
@@ -74,7 +73,7 @@ const Hero = () => {
   return (
     <div className="w-screen overflow-hidden  md:flex md:w-full md:flex-col md:items-center md:justify-center">
       <div className="w-full overflow-hidden text-lg  print:hidden  dark:bg-white dark:text-black">
-      <section>
+        <section>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -104,7 +103,9 @@ const Hero = () => {
               src={`${homeData.h2Image}`}
               className=" h-full w-full rounded-lg object-cover shadow-lg"
               alt={homeData.h2Image.split("/").pop()?.split(".")[0] || "image"}
-              title={homeData.h2Image.split("/").pop()?.split(".")[0] || "image"}
+              title={
+                homeData.h2Image.split("/").pop()?.split(".")[0] || "image"
+              }
             />
           </div>
         </div>
@@ -126,7 +127,9 @@ const Hero = () => {
               src={`${homeData.h3Image}`}
               className=" h-full w-full rounded-lg object-cover shadow-lg"
               alt={homeData.h3Image.split("/").pop()?.split(".")[0] || "image"}
-              title={homeData.h3Image.split("/").pop()?.split(".")[0] || "image"}
+              title={
+                homeData.h3Image.split("/").pop()?.split(".")[0] || "image"
+              }
             />
           </div>
           <div className="flex flex-col justify-center    ">
@@ -142,14 +145,14 @@ const Hero = () => {
         {/* Area we Serve */}
         <div className="mx-auto mt-14 max-w-[95rem] md:mt-20">
           <div className="mt-10 flex h-96 rounded-xl  bg-minor  shadow-2xl md:mb-10">
-            <div className="md:w-[87%]">
+            <div className="lg:w-[87%]">
               <h2 className="mt-4 p-1 text-center text-2xl font-bold text-white">
                 We Proudly Serve{" "}
                 <span className="text-main">The Following Areas</span>
               </h2>
               <AreaWeServe slugs={slugs} />
             </div>
-            <div className="hidden h-full w-full md:flex">
+            <div className="hidden h-full w-full lg:flex">
               <HourCta />
             </div>
           </div>
