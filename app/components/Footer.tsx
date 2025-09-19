@@ -1,12 +1,13 @@
+// Footer.tsx
 import Image from "next/image";
 import Link from "next/link";
 import contentData from "@/components/Content/footer.json";
-import { RiMapPin2Fill } from "react-icons/ri";
+import { RiMailFill, RiMapPin2Fill } from "react-icons/ri";
 import data from "@/components/Content/serviceWidgetContent.json";
 import ContactInfo from "@/components/Content/ContactInfo.json";
 const Footer = () => {
   return (
-    <div className=" flex w-full items-center justify-center bg-[#eeecec]">
+    <div className=" flex w-full items-center justify-center bg-[#eeecec] pb-16">
       <div className=" flex w-full  items-center justify-center overflow-hidden">
         <div className=" mt-8 flex w-full flex-col  items-center justify-center md:min-w-[650px] ">
           <div className="mt-8 flex w-fit flex-col justify-center gap-2 px-6  md:w-full  md:flex-row md:items-start   md:justify-around md:px-20 ">
@@ -43,8 +44,8 @@ const Footer = () => {
               <div className=" w-fit border-b-2 border-minor text-3xl font-semibold text-main">
                 Our Services
               </div>
-              <div className="mt-6 flex  flex-col gap-2  text-center">
-                {data.lists.map(
+              <div className="mt-6 flex   flex-col gap-2  text-center">
+                {data.lists.slice(0, 4).map(
                   (list) =>
                     list.title && (
                       <Link href={`/services/${list.slug}`} key={list.title}>
@@ -54,14 +55,18 @@ const Footer = () => {
                       </Link>
                     ),
                 )}
+                <span className="font-semibold text-main">
+                  <Link href={"/services"}>Read More..</Link>
+                </span>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center md:w-80">
+            <div className="flex flex-col items-center justify-center shadow-sm md:w-80    ">
               <div className=" w-fit border-b-2 border-minor text-3xl font-semibold text-main">
                 REACH OUT TO US
               </div>
-              <div className="mt-5  text-lg">
-                <div className="  flex items-center gap-4">
+
+              <div className="mt-5   text-lg">
+                <div className="  flex items-center  gap-4">
                   <div className="w-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -80,12 +85,27 @@ const Footer = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="mt-2">
-                  <div className="flex">
-                    <RiMapPin2Fill className="text-cream mr-5 mt-1 w-8 text-lg" />
-                    {ContactInfo.address}
+                {ContactInfo?.address && (
+                  <div className="mt-2">
+                    <div className="flex">
+                      <RiMapPin2Fill className="text-cream mr-5 mt-1 w-8 text-lg" />
+                      {ContactInfo.address}
+                    </div>
                   </div>
-                </div>
+                )}
+                {ContactInfo.mail && (
+                  <div className="mt-2">
+                    <div className="flex gap-2">
+                      <RiMailFill className="text-cream  mt-1 w-8 text-lg " />
+                      <a
+                        href={`mailto:${ContactInfo.mail}`}
+                        className="!text-start underline"
+                      >
+                        {ContactInfo.mail}
+                      </a>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -93,10 +113,9 @@ const Footer = () => {
             <p className="my-2">
               Copyright ©2025 {ContactInfo?.name}, All Right Reserved |
               <Link
-                href="/sitemap.xml"
-                className="font-semibold underline-offset-8 duration-300 ease-in-out hover:underline hover:underline-offset-2"
+                href={`${ContactInfo?.baseUrl}sitemap.xml`}
+                className="ml-2 font-semibold underline-offset-8 duration-300 ease-in-out hover:underline hover:underline-offset-2"
               >
-                {" "}
                 Sitemap
               </Link>
             </p>
