@@ -2,7 +2,7 @@
   "metaTitle": "Dumpster Rental in Fort Myers, FL | Same-Day Service",
   "metaDescription": "Fast & affordable dumpster rentals in Fort Myers, FL for residential, construction, and commercial needs. Call us at (239) 899-0043 for free quotes & same-day delivery!",
   "bannerQuote": "",
-  "bannerImage": "banner.jpg",
+  "bannerImage": "https://ik.imagekit.io/serviceproviders/dellerprosvc.com/banner.jpg",
   "h1Banner": "Fort Myers Dumpster Rental Experts",
   "p1Banner": "",
   "h2": "Roll-Off Dumpster Rentals That Work on Your Schedule",
@@ -43,10 +43,186 @@
       }
     ]
   },
+  "affordableWidget": {
+    "title": "A Better Way to Rent Dumpsters",
+    "description": "We’ve taken the hassle out of dumpster rental in Riverside. Here’s how we make it easy, clear, and convenient for you:",
+    "ctaText": "Call Now",
+    "cards": [
+      {
+        "title": "Simple Booking Process",
+        "description": "No long forms. No runaround. One quick call and we’ll get you scheduled in minutes."
+      },
+      {
+        "title": "Licensed Waste Disposal",
+        "description": "We follow state regulations and local guidelines to ensure all your waste is handled responsibly."
+      },
+      {
+        "title": "Reliable Customer Support",
+        "description": "From first inquiry to final pickup, our team is ready to answer your questions and help you out."
+      }
+    ]
+  },
+  "processWidget": {
+    "title": "How It Works – Simple from Start to Finish",
+    "description": "",
+    "steps": [
+      {
+        "title": "Step 1: Request a Free Quote",
+        "description": "Call us or fill out a quick form. We’ll help you choose the right dumpster size and provide upfront pricing."
+      },
+      {
+        "title": "Step 2: Schedule Delivery",
+        "description": "Let us know your preferred delivery window. We’ll confirm everything and make sure the area is ready for drop-off."
+      },
+      {
+        "title": "Step 3: Load Your Dumpster",
+        "description": "Fill it at your own pace. Our containers are driveway-friendly, clean, and built for all types of waste."
+      },
+      {
+        "title": "Step 4: We Pick It Up",
+        "description": "When you’re finished, give us a quick call. We’ll haul it away promptly and dispose of everything responsibly."
+      }
+    ]
+  },
+  "hourCtaWidget": {
+    "title": "Need a Dumpster Fast? Call Now for a Free Estimate!"
+  },
   "h3": "About Fort Myers Dumpster Rental Experts",
   "p3": "We’re not just another waste removal company—we’re your neighbors in Fort Myers. Fort Myers Dumpster Rental Experts is a locally owned business with over 15 years of hands-on experience helping homeowners, contractors, and event organizers keep their projects clean and organized. Whether it’s a single roll-off or a full service package including porta potty rentals, we provide dependable solutions that fit your timeline and budget.",
   "h3Image": "https://ik.imagekit.io/serviceproviders/dellerprosvc.com/manchester-uk-10-may-2017-group-of-wheelie-bin.jpg?updatedAt=1744191877682",
-  "faq": [],
-  "testimonials": [],
+  "faq": [
+    {
+      "FAQ": "What dumpster sizes do you offer in [location]?",
+      "Answer": "We offer a variety of dumpster sizes in [location], including 10-yard, 15-yard, 20-yard, 30-yard, and 40-yard containers to fit everything from small cleanups to large construction projects."
+    },
+    {
+      "FAQ": "How much does dumpster rental cost in [location]?",
+      "Answer": "Pricing in [location] depends on the dumpster size, rental duration, and type of debris. On average, rates start around $300 and can go up based on your specific needs. Call us for a quick quote."
+    },
+    {
+      "FAQ": "What can I put in the dumpster?",
+      "Answer": "Most general household and construction debris are allowed. This includes furniture, wood, drywall, yard waste, and more. Items like tires, batteries, paints, and hazardous waste are restricted."
+    },
+    {
+      "FAQ": "How long can I keep the dumpster?",
+      "Answer": "Our standard rental period in [location] is 7 days, but we’re flexible. Need it longer? Let us know — we offer extended rental options at a small additional fee."
+    },
+    {
+      "FAQ": "Do I need a permit to place a dumpster on the street in [location]?",
+      "Answer": "Yes, in most cases. If you're placing the dumpster on public property like a street or sidewalk in [location], you may need a city permit. We can guide you through the process."
+    },
+    {
+      "FAQ": "How soon can I get a dumpster delivered?",
+      "Answer": "We offer same-day or next-day dumpster delivery in [location], depending on availability. Booking early helps us lock in your preferred time slot."
+    },
+    {
+      "FAQ": "What’s the process to rent a dumpster in [location]?",
+      "Answer": "It’s easy. Call us or book online. We’ll help you choose the right size, schedule your drop-off, and pick it up once you're done. Transparent pricing, no hidden fees."
+    },
+    {
+      "FAQ": "Are there weight limits for dumpsters?",
+      "Answer": "Yes, each dumpster has a specific weight limit based on its size. We’ll explain the limit during booking to help you avoid overage charges. Need help estimating? We’ve got your back."
+    },
+    {
+      "FAQ": "Can I rent dumpsters for commercial projects in [location]?",
+      "Answer": "Absolutely. We serve both residential and commercial clients. Whether you're renovating a restaurant, running a job site, or clearing a property — we've got the right dumpster for the job."
+    },
+    {
+      "FAQ": "What happens if I overload the dumpster?",
+      "Answer": "Overloading the dumpster can result in additional fees and may delay pickup. Always keep debris below the rim and follow the weight guidelines we provide."
+    }
+  ],
+  "reviews": [
+    {
+      "Review": "After remodeling our kitchen in [location], we had piles of debris everywhere. Their roll-off dumpster rental made cleanup effortless and quick. Great service, fair price!"
+    },
+    {
+      "Review": "I had to clear out my late aunt's garage in [location] and didn't know where to start. The 20-yard dumpster rental saved me hours of stress."
+    },
+    {
+      "Review": "Construction at our [location] home left a mess. Renting a dumpster here was a breeze-timely drop-off, clear instructions, and super easy pickup."
+    },
+    {
+      "Review": "Booked a dumpster for a roofing job in [location]. It arrived right on schedule and fit perfectly in my driveway. Affordable and reliable."
+    },
+    {
+      "Review": "Tearing down our old deck was tough, but finding the right dumpster rental in [location] wasn't. Their team helped me choose the right size."
+    },
+    {
+      "Review": "We're landscaping our backyard in [location] and had tons of dirt and branches to dispose of. Their dumpster rental handled it all in one go."
+    },
+    {
+      "Review": "After our spring cleanout in [location], we were overwhelmed with junk. This dumpster rental was exactly what we needed-no hidden fees, just solid service."
+    },
+    {
+      "Review": "Managing waste from our basement renovation in [location] was made simple with their dumpster rental. The 15-yard size was perfect for our needs."
+    },
+    {
+      "Review": "I run a small contracting biz in [location], and these guys are my go-to for construction dumpster rentals. On time, every time."
+    },
+    {
+      "Review": "Moved into a fixer-upper in [location] and needed to dump old furniture, drywall, and flooring. Dumpster arrived clean and on time. Game changer."
+    },
+    {
+      "Review": "Demolished an old shed in [location] and booked a dumpster last minute. They didn't disappoint-responsive, fair pricing, and no delivery drama."
+    },
+    {
+      "Review": "Running a house cleanout after a tenant move in [location] was chaotic. Thankfully, the dumpster rental helped us knock it out in a day."
+    },
+    {
+      "Review": "Our office remodel in [location] left behind more debris than expected. Called for a commercial dumpster, and it was handled like a pro job."
+    },
+    {
+      "Review": "Hosting a big event at our [location] property meant lots of waste. Renting a dumpster was the best decision-easy to order, even easier to return."
+    },
+    {
+      "Review": "After a flooded basement cleanup in [location], we needed a dumpster fast. These folks delivered within hours and made the process smooth."
+    },
+    {
+      "Review": "I'm a landlord in [location], and every time I flip a property, I count on this dumpster rental service. Dependable and efficient."
+    },
+    {
+      "Review": "We cleaned out our attic before the move from [location] and were surprised how much junk we had. The dumpster rental was a lifesaver."
+    },
+    {
+      "Review": "Had a tight space in our [location] driveway, but they still managed to deliver a 10-yard dumpster with no hassle. Impressed with the service."
+    },
+    {
+      "Review": "As a local handyman in [location], I need dumpster rentals often. This team never lets me down-always on time and easy to deal with."
+    },
+    {
+      "Review": "Post-holiday decluttering in [location] got overwhelming. Called in for a small dumpster rental and it made everything manageable. Worth every penny."
+    },
+    {
+      "Review": "Needed to clear storm debris from our yard in [location]. The dumpster arrived fast and made the cleanup feel like a breeze."
+    },
+    {
+      "Review": "We're flipping a house in [location] and this is our second time renting their dumpster. Professional, affordable, and hassle-free service."
+    },
+    {
+      "Review": "Renovating our bathroom in [location] meant we had tile, drywall, and cabinets to toss. Their dumpster fit everything and saved multiple trips to the dump."
+    },
+    {
+      "Review": "Helping my parents downsize in [location] was emotional and messy. The dumpster made it manageable and kept us focused on what mattered."
+    },
+    {
+      "Review": "Hosting a family reunion in [location] meant serious cleanup. Renting a dumpster helped us stay ahead of the mess. Super convenient."
+    },
+    {
+      "Review": "I needed dunpster for bulk waste support. Their dumpster rental was the perfect community-friendly solution in [location]."
+    },
+    {
+      "Review": "My workshop in [location] needed a serious declutter. Booked a dumpster and knocked it all out over the weekend-so satisfying!"
+    },
+    {
+      "Review": "Clearing out years of stuff from our storage unit in [location] was easier than expected, thanks to a quick and clean dumpster delivery."
+    },
+    {
+      "Review": "Doing a home office renovation in [location], I had no idea how much trash I'd produce. So glad I rented a dumpster in advance."
+    },
+    {
+      "Review": "First time renting a dumpster in [location] for our garage overhaul. Easy booking, smooth delivery, and zero stress. Definitely doing this again."
+    }
+  ],
   "mapLink": "https://maps.google.com/maps?q=Fort+Myers+FL&t=&z=11&ie=UTF8&iwloc=&output=embed"
 }

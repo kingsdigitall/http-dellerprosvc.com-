@@ -10,5 +10,9 @@
   "location": "Fort Myers, FL",
   "zipCode": "33901",
   "bannerImage": "https://ik.imagekit.io/serviceproviders/dellerprosvc.com/banner.jpg?updatedAt=1744187611300",
-  "logo": "https://ik.imagekit.io/serviceproviders/dellerprosvc.com/logo.png?updatedAt=1744185528496"
+  "logoImage": "https://ik.imagekit.io/serviceproviders/dellerprosvc.com/logo.png?updatedAt=1744185528496",
+  "favicon": "",
+  "googleAnalytics": "",
+  "main": "#f14749",
+  "minor": "#be3739"
 }
