@@ -2,16 +2,20 @@ import Image from "next/image";
 import Banner from "./Banner";
 import WhyChoose from "./WhyChoose";
 import HourCta from "./HourCta";
-import homeData from "@/components/Content/home.json";
 import Faq from "./Faq";
 import Service from "@/app/components/Home/Service";
 import Affordable from "./Affordable";
 import ProcessWidget from "../Widgets/ProcessWidget";
 import AreaWeServe from "../Widgets/AreaWeServe";
-import content from "@/components/Content/subDomainUrlContent.json";
-import TypeOfDumpster from "../Widgets/TypeOfDumpster";
 import ReviewWidget from "../Widgets/ReviewWidget";
-import ContactInfo from "@/components/Content/ContactInfo.json";
+import Types from "../Widgets/Types";
+
+import contactContent from "@/app/Data/content";
+import SubdomainContent from "@/app/Data/FinalContent";
+
+const ContactInfo: any = contactContent.contactContent;
+const homeData: any = contactContent.homePageContent;
+const content: any = SubdomainContent.subdomainData;
 
 const Hero = () => {
   const cityData: any = content;
@@ -20,7 +24,8 @@ const Hero = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: `${ContactInfo.name}`,
-    image: `${ContactInfo.logo}` || "",
+    image:
+      `${ContactInfo?.logoImage}` || "",
     "@id": `${ContactInfo.baseUrl}`,
     url: `${ContactInfo.baseUrl}`,
     telephone: `${ContactInfo.No}`,
@@ -73,7 +78,7 @@ const Hero = () => {
   return (
     <div className="w-screen overflow-hidden  md:flex md:w-full md:flex-col md:items-center md:justify-center">
       <div className="w-full overflow-hidden text-lg  print:hidden  dark:bg-white dark:text-black">
-        <section>
+      <section>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -103,56 +108,31 @@ const Hero = () => {
               src={`${homeData.h2Image}`}
               className=" h-full w-full rounded-lg object-cover shadow-lg"
               alt={homeData.h2Image.split("/").pop()?.split(".")[0] || "image"}
-              title={
-                homeData.h2Image.split("/").pop()?.split(".")[0] || "image"
-              }
+              title={homeData.h2Image.split("/").pop()?.split(".")[0] || "image"}
             />
           </div>
         </div>
         {/* Section 1 */}
         {/* TYPES */}
-        {/* <TypeOfDumpster /> */}
+        <Types />
         <Service />
         {/* TYPES*/}
-        {/* <Affordable /> */}
+        <Affordable />
         {/* Section 4 */}
         <WhyChoose data={homeData.whyChooseSection} />
         {/* Section 4 */}
-        {/* Section 1 */}
-        <div className="my-10 grid  grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-24">
-          <div className="">
-            <Image
-              height={10000}
-              width={10000}
-              src={`${homeData.h3Image}`}
-              className=" h-full w-full rounded-lg object-cover shadow-lg"
-              alt={homeData.h3Image.split("/").pop()?.split(".")[0] || "image"}
-              title={
-                homeData.h3Image.split("/").pop()?.split(".")[0] || "image"
-              }
-            />
-          </div>
-          <div className="flex flex-col justify-center    ">
-            <h2 className="text-first text-3xl font-bold">{homeData.h3}</h2>
-            <div
-              className="mt-4  text-justify"
-              dangerouslySetInnerHTML={{ __html: homeData.p3 }}
-            ></div>
-          </div>
-        </div>
-        {/* Section 1 */}
         <ProcessWidget />
         {/* Area we Serve */}
         <div className="mx-auto mt-14 max-w-[95rem] md:mt-20">
-          <div className="mt-10 flex h-96 rounded-xl  bg-minor  shadow-2xl md:mb-10">
-            <div className="lg:w-[87%]">
-              <h2 className="mt-4 p-1 text-center text-2xl font-bold text-white">
+          <div className="mt-10 flex h-96 rounded-xl  bg-white   shadow-inner shadow-minor md:mb-10">
+            <div className="md:w-[87%]">
+              <div className="mt-4 p-1 text-center text-2xl font-bold text-main">
                 We Proudly Serve{" "}
-                <span className="text-main">The Following Areas</span>
-              </h2>
+                <span className="text-mai">The Following Areas</span>
+              </div>
               <AreaWeServe slugs={slugs} />
             </div>
-            <div className="hidden h-full w-full lg:flex">
+            <div className="hidden h-full w-full md:flex">
               <HourCta />
             </div>
           </div>
@@ -162,7 +142,7 @@ const Hero = () => {
         <div className="mt-14 md:mt-20"></div>
         {/* CTA */}
         {/* FAQ */}
-        <Faq />
+        <Faq  data={homeData.faq}/>
         {/* FAQ */}
         {/* Review */}
         <ReviewWidget />
@@ -174,7 +154,7 @@ const Hero = () => {
               title="Google Map"
               height="350"
               width={"100%"}
-              src={homeData?.mapLink}
+              src={`https://maps.google.com/maps?q=Louisville+Kentucky&t=&z=13&ie=UTF8&iwloc=&output=embed`}
               loading="lazy"
             ></iframe>
           </div>
